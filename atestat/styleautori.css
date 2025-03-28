@@ -1,0 +1,316 @@
+body {
+	background-size: cover;
+	font-family: Arial;
+	background-color: chocolate;
+}
+/* Fixed sidenav, full height */
+.sidenav {
+	display: none;
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidenav.sidenav-active{
+	display: inline-block;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: inline-block;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+	color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+	margin-left: 200px;
+	/* Same as the width of the sidenav */
+	font-size: 20px;
+	/* Increased text to enable scrolling */
+	padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+	background-color: rgb(240, 141, 55);
+	color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+	display: none;
+	background-color: #262626;
+	padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+	float: right;
+	padding-right: 8px;
+}
+
+
+.btn {
+	background-color: rgb(226, 171, 123);
+	/* Blue background */
+	border: none;
+	/* Remove borders */
+	color: white;
+	/* White text */
+	padding: 10px 10px;
+	/* Some padding */
+	font-size: 40px;
+	/* Set a font size */
+	cursor: pointer;
+	/* Mouse pointer on hover */
+}
+.btn:active .dropdown-container{
+	opacity: 1;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+	background-color: rgb(255, 85, 0);
+}
+.card {
+	width: 250px;
+	height: 300px;
+	font-size: 20px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+}
+
+.card1 {
+	background-image: url(img1.jpg);
+}
+
+.card2 {
+	background-image: url(img2.jpg);
+}
+
+.card3 {
+	background-image: url(img3.jpg);
+}
+
+.card4 {
+	background-image: url(img4.jpg);
+}
+
+.card5 {
+	background-image: url(img5.jpg);
+}
+
+.card6 {
+	background-image: url(img6.jpg);
+}
+
+.card7 {
+	background-image: url(img7.jpg);
+}
+
+.card8 {
+	background-image: url(img8.jpg);
+}
+
+.card9 {
+	background-image: url(img9.jpg);
+}
+
+.card10 {
+	background-image: url(img10.jpg);
+}
+
+.card:hover {
+	transform: translateY(-10px);
+}
+
+h5 {
+	color: #fff;
+	text-shadow: 0 0 500px #999;
+}
+
+.card p {
+	text-shadow: 0 0 5px #000;
+}
+
+a:link {
+	color: blanchedalmond;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(34, 15, 129);
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+
+.button-82-pushable {
+	position: relative;
+	border: none;
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+	outline-offset: 4px;
+	transition: filter 250ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.button-82-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background: hsl(0deg 0% 0% / 0.25);
+	will-change: transform;
+	transform: translateY(2px);
+	transition:
+		transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background: linear-gradient(to left,
+			hsl(340deg 100% 16%) 0%,
+			hsl(340deg 100% 32%) 8%,
+			hsl(340deg 100% 32%) 92%,
+			hsl(340deg 100% 16%) 100%);
+}
+
+.button-82-front {
+	display: block;
+	position:relative;
+	padding: 12px 27px;
+	
+	border-radius: 12px;
+	font-size: 1.1rem;
+	color: white;
+	background: hsl(345deg 100% 47%);
+	will-change: transform;
+	transform: translateY(-4px);
+	transition:
+		transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+	.button-82-front {
+		font-size: 1.25rem;
+		padding: 12px 42px;
+	}
+}
+
+.button-82-pushable:hover {
+	filter: brightness(110%);
+	-webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+	transform: translateY(-6px);
+	transition:
+		transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+	transform: translateY(-2px);
+	transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+	transform: translateY(4px);
+	transition:
+		transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+	transform: translateY(1px);
+	transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+	outline: none;
+}
+
+.wrapper-main {
+	width: 1000px;
+	padding:100px 0;
+	margin: 0 auto;
+}
+@media only screen and (max-width: 600px) and (orientation: landscape)
+{
+	.wrapper-main {
+		width: 100%;
+	}
+	
+}
+@media only screen and (max-width: 600px) and (orientation: portrait)
+{
+	.wrapper-main {
+		width: 100%;
+	}
+	
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) and (orientation: portrait)
+{
+	.wrapper-main {
+		width: 100%;
+	}
+	
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape)
+{
+	.wrapper-main {
+		width: 100%;
+	}
+	
+}

@@ -1,0 +1,184 @@
+body {
+  /*background: url('recenzie.jpg') no-repeat;*/
+  background-size: cover;
+  font-family: serif;
+  background-color: rgb(255, 144, 52);
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  display:none;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav.sidenav-active{
+	display: inline-block;
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fefcfc;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #fefdfc;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 20px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(236, 97, 23);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+.btn {
+  background-color: rgb(225, 135, 0);
+  /* Blue background */
+  border: none;
+  /* Remove borders */
+  color: white;
+  /* White text */
+  padding: 10px 10px;
+  /* Some padding */
+  font-size: 40px;
+  /* Set a font size */
+  cursor: pointer;
+  /* Mouse pointer on hover */
+}
+.btn:active .dropdown-container{
+	opacity: 1;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(167, 109, 68);
+}
+
+/*button yes/no*/
+
+.containeryesno {
+  background-color: white;
+  height: 90px;
+  width: 260px;
+  position:relative;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items:center;
+  box-shadow: 2px 2px 8px -2px #444444;
+  display: flex;
+  margin: auto;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+
+span {
+  display:flex;
+  height: 90px;
+  width: 130px;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+input:checked+label {
+  background-position: 0 -90px;
+  color: white;
+  transition: 0.7s;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	background: #aa6906d0;
+  align-items: center;
+	font-size:28px;
+	padding:25px;
+	}
+	
+	.parallax {
+	background: url('spanishdeception.jpg') no-repeat center;
+	background-size:cover;
+	background-attachment: fixed;
+	height:700px;
+	}
+  
+.wrapper-main {
+  width: 1000px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .wrapper-main {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .wrapper-main {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) and (orientation: portrait) {
+  .wrapper-main {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+  .wrapper-main {
+    width: 100%;
+  }
+
+}

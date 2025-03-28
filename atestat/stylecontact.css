@@ -1,0 +1,167 @@
+
+/* Fixed sidenav, full height */
+.sidenav {
+	display: none;
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidenav.sidenav-active{
+	display: inline-block;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: inline-block;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+	color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+	margin-left: 200px;
+	/* Same as the width of the sidenav */
+	font-size: 20px;
+	/* Increased text to enable scrolling */
+	padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+	background-color: rgb(240, 196, 38);
+	color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+	display: none;
+	background-color: #262626;
+	padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+	float: right;
+	padding-right: 8px;
+}
+.btn {
+	background-color: rgb(161, 168, 176);
+	/* Blue background */
+	border: none;
+	/* Remove borders */
+	color: white;
+	/* White text */
+	padding: 10px 10px;
+	/* Some padding */
+	font-size: 40px;
+	/* Set a font size */
+	cursor: pointer;
+	/* Mouse pointer on hover */
+}
+
+.btn:active .dropdown-container{
+	opacity: 1;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+	background-color: rgb(184, 129, 58);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url('carte.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  form {
+   background-color:bisque;
+   margin: auto;
+   border: 2px solid #ccc;
+   padding: 20px;
+  }
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  h4 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  fieldset {
+    border: none;
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    border-bottom: 1px solid #8BC34A;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .button-submit {
+    background-color: #8BC34A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button-submit:hover {
+    background-color: #7CB342;
+  }
+
+  a.button-submit{
+    text-decoration: none;
+    cursor: pointer;
+  }
